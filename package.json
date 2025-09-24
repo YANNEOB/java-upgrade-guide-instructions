@@ -1,0 +1,13 @@
+{
+  "name": "jdk-25-jep-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for JDK 25 JEP documentation",
+  "main": "scraper.js",
+  "scripts": {
+    "install-playwright": "npx playwright install",
+    "scrape": "node scraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
