@@ -4,6 +4,47 @@ This repository contains comprehensive GitHub Copilot instruction sets for upgra
 
 **All content is based on official JEP (Java Enhancement Proposal) documentation scraped directly from OpenJDK.org**, ensuring accuracy and completeness for each upgrade path.
 
+## 🚀 Recommended: Try GitHub Copilot App Modernization Extension First
+
+**Before using these manual instruction files, we strongly recommend trying the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade) VS Code extension.** This extension provides:
+
+### ✅ **Production-Ready Automation**
+- **Guided Agent Mode**: Interactive, step-by-step upgrade process with human oversight
+- **OpenRewrite Integration**: Battle-tested refactoring recipes used by thousands of projects
+- **Automated Build Fixes**: Intelligent resolution of compilation errors and dependency conflicts
+- **CVE Scanning**: Comprehensive security vulnerability detection and remediation
+
+### ✅ **Comprehensive Workflow**
+1. **Project Analysis**: Scans JDK version, build configuration, and deprecated APIs
+2. **Custom Upgrade Plan**: Generates editable migration strategy tailored to your project
+3. **Automated Transformation**: Applies code changes using proven OpenRewrite recipes
+4. **Validation Loop**: Fixes build errors iteratively until compilation succeeds
+5. **Test Execution**: Validates changes through your existing test suite
+6. **Security Audit**: Identifies and suggests fixes for vulnerable dependencies
+
+### ✅ **Beyond Runtime Upgrades**
+- **Cloud Migration**: Assess and migrate to Azure with guided steps
+- **Authentication Modernization**: Migrate from on-premises auth to Microsoft Entra ID
+- **Deployment Automation**: One-click deployment to Azure with infrastructure provisioning
+
+### 🔧 **Getting Started with the Extension**
+```bash
+# Install the extension in VS Code
+# Search for "GitHub Copilot App Modernization" in the Extensions marketplace
+
+# In VS Code, open Copilot Chat and select the Java upgrade tool
+# Then paste: "Using Java upgrade tools, upgrade this project to Java 21. 
+# Analyze deprecated APIs, update dependencies, and propose a safe migration plan."
+```
+
+**When to use these manual instructions instead:**
+- The extension doesn't support your specific upgrade scenario
+- You need detailed understanding of individual JEPs
+- You prefer manual control over each transformation step
+- You want to learn about Java language evolution in depth
+
+---
+
 ## Upgrade Paths
 
 ### Java 11 → Java 17 (LTS to LTS)
@@ -100,7 +141,13 @@ Choose the appropriate instruction file for your upgrade path:
 
 ## How to Use
 
-### With VS Code & GitHub Copilot
+### 🥇 **Option 1: GitHub Copilot App Modernization Extension (Recommended)**
+
+Use the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade) extension for automated, production-ready upgrades with OpenRewrite integration and comprehensive validation.
+
+### 🥈 **Option 2: Manual Instructions with GitHub Copilot**
+
+If you prefer manual control or need to understand specific language changes in detail:
 
 1. **Select Your Upgrade Path**: Choose the appropriate instruction file based on your current and target Java versions:
    - Java 11 → 17: Use `java-11-to-17.instructions.md`
