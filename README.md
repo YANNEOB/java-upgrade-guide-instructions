@@ -79,7 +79,7 @@ Choose the appropriate instruction file for your upgrade path:
 - **`jep-documentation-21-25.json`** - Java 21→25 JEPs scraped from [OpenJDK JDK 25 JEPs](https://openjdk.org/projects/jdk/25/jeps-since-jdk-21) (39 JEPs: 455, 466, 467, 468, 469, 471, 472, 473, 474, 475, etc.)
 - **`jep-documentation-17-21.json`** - Java 17→21 JEPs scraped from [OpenJDK JDK 21 JEPs](https://openjdk.org/projects/jdk/21/jeps-since-jdk-17) (22 JEPs: 441, 444, 440, 439, etc.)
 - **`jep-documentation-11-17.json`** - Java 11→17 JEPs scraped from [OpenJDK JDK 17 JEPs](https://openjdk.org/projects/jdk/17/jeps-since-jdk-11) (47 JEPs: 395, 409, 394, 361, 378, etc.)
-- **`simple-scraper.js`** - Primary scraper for Java 21→25
+- **`scraper-21-25.js`** - Primary scraper for Java 21→25
 - **`scraper-17-21.js`** - Scraper for Java 17→21
 - **`scraper-11-17.js`** - Scraper for Java 11→17
 
