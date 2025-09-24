@@ -4,6 +4,8 @@ This repository contains comprehensive GitHub Copilot instruction sets for upgra
 
 **All content is based on official JEP (Java Enhancement Proposal) documentation scraped directly from OpenJDK.org**, ensuring accuracy and completeness for each upgrade path.
 
+> 💡 **Also Available**: These Java upgrade instructions are featured in the [Awesome Copilot repository](https://github.com/github/awesome-copilot/blob/main/collections/java-development.md) - GitHub's curated collection of the best Copilot resources for developers.
+
 ## 🚀 Recommended: Try GitHub Copilot App Modernization Extension First
 
 **Before using these manual instruction files, we strongly recommend trying the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade) VS Code extension.** This extension provides:
