@@ -1,4 +1,4 @@
-# GitHub Copilot Instructions: Upgrading Java 11 Projects to Java 17
+# GitHub Copilot Instructions: Java 11 to Java 17 Upgrade Guide
 
 ## Project Context
 This guide provides comprehensive GitHub Copilot instructions for upgrading Java projects from JDK 11 to JDK 17, covering major language features, API changes, and migration patterns based on 47 JEPs integrated between these versions.
