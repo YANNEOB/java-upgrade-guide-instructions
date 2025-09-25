@@ -8,7 +8,28 @@ This repository contains comprehensive GitHub Copilot instruction sets for upgra
 
 ## 🚀 Recommended: Try GitHub Copilot App Modernization Extension First
 
-**Before using these manual instruction files, we strongly recommend trying the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade) VS Code extension.** This extension provides:
+**Before using these manual instruction files, I strongly recommend you trying the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure) VS Code extension.** 
+
+### 🔍 **How It Works**
+
+**The extension uses a hybrid approach that combines proven tools with AI intelligence:**
+
+1. **Code Assessment with AppCAT**: Uses **AppCAT** ([Azure Application and Code Assessment Tool](https://learn.microsoft.com/en-us/azure/migrate/appcat/overview?view=migrate-classic)), built on the open-source **Konveyor project**, to perform deep code analysis. This is a **deterministic, rule-based assessment** (not AI-driven) that:
+   - Scans your codebase for deprecated APIs, incompatible patterns, and migration blockers
+   - Identifies all dependencies and their compatibility with target Java versions  
+   - Generates a comprehensive assessment report based on proven migration patterns
+
+2. **AI-Powered Planning**: Once AppCAT completes the assessment, **AI analyzes the findings to create an optimal migration strategy**, considering:
+   - Your specific codebase patterns and dependencies
+   - Risk assessment and prioritization of changes
+   - Sequencing of transformations to minimize breaking changes
+
+3. **Deterministic Code Transformation**: The actual code changes are performed using **OpenRewrite recipes** - **scripts that provide deterministic, highly scalable, non-AI code refactoring**:
+   - Battle-tested transformation rules used by thousands of enterprise projects
+   - Consistent, predictable results across large codebases
+   - Version-controlled, reviewable transformation logic
+
+**Key Point for AI-Cautious Developers**: While AI helps with planning and strategy, the actual code transformations use proven, deterministic tools (AppCAT + OpenRewrite) that have been successfully used in enterprise environments for years.
 
 ### ✅ **Production-Ready Automation**
 - **Guided Agent Mode**: Interactive, step-by-step upgrade process with human oversight
@@ -17,9 +38,9 @@ This repository contains comprehensive GitHub Copilot instruction sets for upgra
 - **CVE Scanning**: Comprehensive security vulnerability detection and remediation
 
 ### ✅ **Comprehensive Workflow**
-1. **Project Analysis**: Scans JDK version, build configuration, and deprecated APIs
-2. **Custom Upgrade Plan**: Generates editable migration strategy tailored to your project
-3. **Automated Transformation**: Applies code changes using proven OpenRewrite recipes
+1. **Project Analysis**: AppCAT scans JDK version, build configuration, and deprecated APIs
+2. **Custom Upgrade Plan**: AI generates editable migration strategy based on AppCAT findings
+3. **Automated Transformation**: Applies code changes using proven OpenRewrite recipes (deterministic)
 4. **Validation Loop**: Fixes build errors iteratively until compilation succeeds
 5. **Test Execution**: Validates changes through your existing test suite
 6. **Security Audit**: Identifies and suggests fixes for vulnerable dependencies
@@ -145,7 +166,7 @@ Choose the appropriate instruction file for your upgrade path:
 
 ### 🥇 **Option 1: GitHub Copilot App Modernization Extension (Recommended)**
 
-Use the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade) extension for automated, production-ready upgrades with OpenRewrite integration and comprehensive validation.
+Use the [GitHub Copilot App Modernization for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-upgrade) extension for automated, production-ready upgrades. **This extension uses AppCAT (Microsoft's deterministic code assessment tool based on Konveyor) for analysis, AI for planning, and OpenRewrite recipes for deterministic code transformation** - addressing concerns about AI-driven code changes by using proven, non-AI tools for the actual transformations.
 
 ### 🥈 **Option 2: Manual Instructions with GitHub Copilot**
 
